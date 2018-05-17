@@ -8,14 +8,48 @@
     <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="markbind\css\github.min.css">
     <link rel="stylesheet" href="markbind\css\markbind.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <h1 id="hello-world">Hello world</h1>
 <p>Welcome to your page generated with MarkBind.</p>
+<p>{​{glyphicon_home}​}</p>
+<p><big>Some text, some text</big></p>
+<panel type="seamless" header="Minimized panel 1" minimized="">
+  <ul>
+    <li><small>Content</small> 1</li>
+    <li>Content 2</li>
+  </ul>
+  <panel type="seamless" header="Minimized panel 1" minimized="">
+    <ul>
+      <li>Content 1</li>
+      <li>Content 2</li>
+    </ul>
+  </panel>
+</panel>
+<p></p>
+<p>{​{glyphicon_home}​}
+  <small><small><span class="glyphicon glyphicon-search" aria-hidden="true"></span></small></small>
+</p>
+<tabs>
+
+  <tab header="{​{glyphicon_hand_right}​}">
+    <pre><code class="hljs java">
+</code></pre>
+  </tab>
+
+  <tab header="**{​{glyphicon_hand_left}​}**">
+    <pre><code class="hljs python">
+</code></pre>
+  </tab>
+</tabs>
 </div>
 </body>
 <script src="markbind\js\vue.min.js"></script>
 <script src="markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = ''
+</script>
 <script src="markbind\js\setup.js"></script>
 </html>
