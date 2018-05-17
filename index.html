@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="markbind\css\github.min.css">
     <link rel="stylesheet" href="markbind\css\markbind.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/markbindsandbox/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <h1 id="hello-world">Hello world</h1>
 <p>Welcome to your page generated with MarkBind.</p>
-<p>{​{glyphicon_home}​}</p>
+<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span></p>
 <p><big>Some text, some text</big></p>
-<panel type="seamless" header="Minimized panel 1" minimized="">
+<panel type="info">
+  <div slot="header">Minimized panel 1 <span class="glyphicon glyphicon-home" aria-hidden="true"></span></div>
   <ul>
     <li><small>Content</small> 1</li>
     <li>Content 2</li>
@@ -29,27 +30,24 @@
   </panel>
 </panel>
 <p></p>
-<p>{​{glyphicon_home}​}
-  <small><small><span class="glyphicon glyphicon-search" aria-hidden="true"></span></small></small>
+<p><a href="googl.com"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></p>
+<p><small><small><span class="glyphicon glyphicon-search" aria-hidden="true"></span></small></small>
 </p>
 <tabs>
 
-  <tab header="{​{glyphicon_hand_right}​}">
+  <tab header="<span class='glyphicon glyphicon-search' aria-hidden='true'>">
     <pre><code class="hljs java">
 </code></pre>
   </tab>
 
-  <tab header="**{​{glyphicon_hand_left}​}**">
-    <pre><code class="hljs python">
-</code></pre>
-  </tab>
+  <tab header="**{​{glyphicon_home}​}**"></tab>
 </tabs>
 </div>
 </body>
 <script src="markbind\js\vue.min.js"></script>
 <script src="markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = ''
+    const baseUrl = '/markbindsandbox'
 </script>
 <script src="markbind\js\setup.js"></script>
 </html>
