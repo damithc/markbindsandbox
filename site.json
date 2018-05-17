@@ -1,5 +1,6 @@
 {
-  "baseUrl": "",
+  "baseUrl": "/markbindsandbox",
+  "faviconPath": "favicon.ico",
   "titlePrefix": "",
   "ignore": [
     "_markbind/logs/*",
